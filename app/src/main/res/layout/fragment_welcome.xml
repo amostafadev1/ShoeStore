@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboard.WelcomeFragment">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="@id/logo_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logo_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/logo_guideline" />
+
+    <ImageView
+        android:id="@+id/headerIcon_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.34"
+        android:src="@android:drawable/star_on"
+        app:layout_constraintBottom_toBottomOf="@id/header_text"
+        app:layout_constraintEnd_toEndOf="@id/header_text"
+        app:layout_constraintStart_toStartOf="@id/header_text"
+        app:layout_constraintTop_toTopOf="@id/header_text"
+        android:contentDescription="@string/welcome_header_icon" />
+
+    <TextView
+        android:id="@+id/header_text"
+        style="@style/header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        app:layout_constraintBottom_toTopOf="@id/greeting_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/logo_guideline"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/greeting_text"
+        style="@style/main_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="40sp"
+        tools:text="@string/greeting_example" />
+
+    <TextView
+        android:id="@+id/tapNext_text"
+        style="@style/main_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tapNext"
+        app:layout_constraintBottom_toTopOf="@id/next_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/greeting_text"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/next_button"
+        style="@style/goButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tapNext_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

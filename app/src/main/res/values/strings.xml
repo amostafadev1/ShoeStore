@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="logo">logo</string>
+    <string name="register">Register</string>
+    <string name="welcome">Welcome</string>
+    <string name="greeting_format">Hello, %s!\nHope you make the best out of Shoe Store.</string>
+    <string name="greeting_example">Hello, email@example.com!\nHope you make the best out of <i>Shoe Store</i>.</string>
+    <string name="tapNext">Tap next to continue.</string>
+    <string name="next">Next</string>
+    <string name="instructions">Instructions</string>
+    <string name="welcome_header_icon">welcome header icon</string>
+    <string name="instructions_header_icon">instructions header icon</string>
+    <string name="start">Start</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="shoes_list">Shoes List</string>
+    <string name="add_shoe_icon">add shoe icon</string>
+    <string name="add_shoe">Add Shoe</string>
+    <string name="shoe_company">Shoe Company</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="shoe_description">Shoe Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="add_shoe_button">add shoe button</string>
+    <string name="instruction_3">Browse Shoes through the list.</string>
+    <string name="instruction_2">Shoe info include: name, company, size, and description.</string>
+    <string name="instruction_1">Add Shoes via the add button.</string>
+    <string name="logout">Logout</string>
+</resources>

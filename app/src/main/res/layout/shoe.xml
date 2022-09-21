@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/small_margin"
+    android:orientation="vertical"
+    android:padding="@dimen/offset">
+
+    <TextView
+        android:id="@+id/name_shoe_text"
+        style="@style/header.item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme"
+        tools:text="Name shoe" />
+
+    <TextView
+        android:id="@+id/company_shoe_text"
+        style="@style/main_text.item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Company shoe" />
+
+    <TextView
+        android:id="@+id/size_shoe_text"
+        style="@style/main_text.item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Size shoe" />
+
+    <TextView
+        android:id="@+id/desc_shoe_text"
+        style="@style/main_text.item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Description shoe" />
+
+</LinearLayout>
