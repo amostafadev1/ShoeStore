@@ -5,9 +5,7 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.onNavDestinationSelected
 import com.example.shoestore.MainViewModel
 import com.example.shoestore.R
 import com.example.shoestore.Shoe
@@ -40,15 +38,19 @@ class ListFragment : Fragment() {
             navigateToDetail()
         }
 
-        mainViewModel.shoeList.observe(viewLifecycleOwner, Observer { list ->
+        mainViewModel.shoeList.observe(viewLifecycleOwner) { list ->
             list.forEach { shoe ->
                 addToLayout(shoe)
             }
-        })
+        }
     }
 
     fun navigateToDetail() {
         findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment())
+    }
+
+    fun logout() {
+        findNavController().navigate(ListFragmentDirections.logout())
     }
 
     fun addToLayout(shoe: Shoe) {
@@ -66,8 +68,8 @@ class ListFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return item.onNavDestinationSelected(findNavController()) ||
-                super.onOptionsItemSelected(item)
+        logout()
+        return true
     }
 
     override fun onDestroyView() {

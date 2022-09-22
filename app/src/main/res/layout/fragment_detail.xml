@@ -10,6 +10,9 @@
             type="com.example.shoestore.MainViewModel" />
     </data>
 
+<!--    Same as login screen, using ConstraintLayout to make use of the guidelines
+        for screen edge margins and to align logo, header, input fields,
+        and the buttons together.-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

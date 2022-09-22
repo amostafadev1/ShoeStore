@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--    Similar to login, but we could actually use LinearLayout
+        except that I like to keep the logo at 20% of the top of the screen
+        using ConstraintLayout's GuideLine.-->
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
